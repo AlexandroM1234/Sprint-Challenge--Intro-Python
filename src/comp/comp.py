@@ -61,7 +61,7 @@ print(f)
 # list, except with all the names uppercase and the ages with 5 added to them.
 # The "humans" list should be unmodified.
 print("All names uppercase:")
-g = [names.name.upper() for names in humans]
+g = [Human(names.name.upper(),(names.age+5)) for names in humans]
 print(g)
 
 # Write a list comprehension that contains the square root of all the ages.
